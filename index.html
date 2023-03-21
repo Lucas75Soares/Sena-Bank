@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sena Bank</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/colors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="container header">
+        <img src="img/logo-senabank.png" alt="">
+    </header>
+    <main class="">
+        <div class="container invest">
+            <div class="photo-invest">
+                <img src="img/image-home.png" alt="">
+            </div>
+            <div class="texto-invest">
+                <h1>Sena Bank</h1>
+                <p>Aqui seu dinheiro será bem valorizado </p>
+                <a href="" class="texto-branco">SIMULE UM INVEST</a>
+            </div>
+        </div>
+        <div class="container vantagens">
+            <h2>Vantagens do nosso banco</h2>
+            <ul class="vantagens-lista">
+                <li><img src="img/Liquidez diária.png" alt=""></li>
+                <li><img src="img/atendimento-perso.png" alt=""></li>
+                <li><img src="img/saques-24.png" alt=""></li>
+            </ul>
+            <div class="vantagens-lista-p">
+                <p class="p-1">Liquidez diária</p>
+                <p class="p-2">Atendimento Personalizado</p>
+                <p class="p-3">Saques 24hrs online</p>
+            </div>
+        </div>
+        <div class="container simule-agora">
+            <h1>Simule Agora</h1>
+            <input type="number" placeholder="Digite o valor do investimento" id="valor-investido">
+            <input type="number" placeholder="Digite a quantidade de anos" id="anos-investido">
+            <button id="btn-calcular"></button>
+            <p>Taxa Fixa 15% a ano </p>
+            <p>Retorno do Investimento</p>
+            <h4 id="retorno-elemento"></h4>
+            <h4 id="montante-retorno"></h4>
+
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </main>
+</body>
+
+</html>
