@@ -17,7 +17,7 @@
 
 <body>
     <header class="container header">
-        <img src="img/logo-senabank.png" alt="">
+        <img id="logo" src="img/logo-senabank.png" alt="">
     </header>
     <main class="">
         <div class="container invest">
@@ -27,34 +27,53 @@
             <div class="texto-invest">
                 <h1>Sena Bank</h1>
                 <p>Aqui seu dinheiro será bem valorizado </p>
-                <a href="" class="texto-branco">SIMULE UM INVEST</a>
+                <a href="#simule-agr" class="texto-branco">SIMULE UM INVEST</a>
             </div>
         </div>
-        <div class="container vantagens">
-            <h2>Vantagens do nosso banco</h2>
-            <ul class="vantagens-lista">
-                <li><img src="img/Liquidez diária.png" alt=""></li>
-                <li><img src="img/atendimento-perso.png" alt=""></li>
-                <li><img src="img/saques-24.png" alt=""></li>
+        <div class="vantagens">
+            <div class=" vantagens">
+                <h2 class="">Vantagens do nosso banco</h2>
+                <ul class="vantagens-lista container">
+                    <li>
+                        <img src="img/Liquidez diária.png" alt="">
+                        <span>Liquidez diaria</span>
+                    </li>
+                    <li>
+                        <img src="img/atendimento-perso.png" alt="">
+                        <span>Atendimento Personalizado</span>
+                    </li>
+                    <li>
+                        <img src="img/saques-24.png" alt="">
+                        <span>Saques 24hrs online</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="container simule-agora" id="simule-agr">
+            <ul>
+                <li class="li-inputs">
+                    <h1>Simule Agora</h1>
+                    <input type="number" placeholder="Digite o valor do investimento" id="valor-investido">
+                    <input type="number" placeholder="Digite a quantidade de anos" id="anos-investido">
+                </li>
+                <li class="li-content-simule">
+                    <p>Taxa Fixa: 15% ao ano </p>
+                    <button id="btn-calcular"><img src="img/icons8-dólar-cambial-50 1.png" alt=""></button>
+                    <p>Retorno do Investimento:
+                        <span id="retorno-elemento"></span>
+                        <span id="montante-retorno"></span>
+                    </p>
+                </li>
             </ul>
-            <div class="vantagens-lista-p">
-                <p class="p-1">Liquidez diária</p>
-                <p class="p-2">Atendimento Personalizado</p>
-                <p class="p-3">Saques 24hrs online</p>
-            </div>
-        </div>
-        <div class="container simule-agora">
-            <h1>Simule Agora</h1>
-            <input type="number" placeholder="Digite o valor do investimento" id="valor-investido">
-            <input type="number" placeholder="Digite a quantidade de anos" id="anos-investido">
-            <button id="btn-calcular"></button>
-            <p>Taxa Fixa 15% a ano </p>
-            <p>Retorno do Investimento</p>
-            <h4 id="retorno-elemento"></h4>
-            <h4 id="montante-retorno"></h4>
+            <div><img src="img/simule-agr.png" alt=""></div>
 
 
         </div>
+        <footer class="">
+            <p>Todos os direitos reservados - SenaBank</p>
+            <p>@2023</p>
+        </footer>
 
         <script src="index.js"></script>
 

@@ -1,6 +1,9 @@
 * {
     font-family: 'Inter', Arial;
+    scroll-behavior: smooth !important;
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -75,6 +78,10 @@ li {
 .vantagens {
     background-color: var(--primary-color);
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .vantagens-lista {
@@ -84,7 +91,7 @@ li {
 }
 
 .vantagens li{
-    background-color: white;
+    
     width: 230px;
     height: 230px;
     align-content: center;
@@ -92,6 +99,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .vantagens h2 {
@@ -100,6 +108,20 @@ li {
     color: var(--text-color-white);
     font-size: 50px;
 }
+
+.vantagens-lista img {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    padding: 24px;
+}
+
+.vantagens-lista span {
+    color: var(--text-color-white);
+    font-size: 35px;
+    text-align: center;
+}
+
 
 .vantagens-lista-p {
     display: flex;
@@ -113,4 +135,99 @@ li {
     margin: 0 auto;
     max-width: 30ch;
 }
+
+.simule-agora {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.simule-agora button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.simule-agora ul {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.li-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.li-inputs input {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 36px;
+}
+
+.li-inputs input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.li-content-simule {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 12px;
+}
+
+.li-content-simule p {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.li-content-simule button {
+    margin-top: 20px;
+    transition: 0.6s;
+}
+
+.li-content-simule button:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.li-content-simule span{
+    display: block;
+    background-color: var(--secondary-color);
+    color:var(--text-color-white);
+    text-align: center;
+    margin: 5px 0;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 300;
+    
+}
+
+#retorno-elemento, #montante-retorno {
+    display: none;
+}
+
+footer {
+    margin-top: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-white);
+    height: 120px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
 
